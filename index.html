@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parallax Website Using html css</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <section>
+        <img src="first.jpg" id="first">
+        <img src="last.png" id="last">
+        <h1 id="text">Parallax</h1>
+
+    </section>
+
+        <div class="ab-text">
+            <div class="heading">
+                <h2>Photography</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus<br>
+                    eius ipsa suscipit accusantium odio, ipsam fuga cum eveniet vel temporibus?</p>
+            </div>
+
+            <div class="container">
+                <div class="box box1">
+                    <div class="in">
+                        <p>like</p>
+                    </div>
+                </div>
+
+                <div class="box box2">
+                    <div class="in">
+                        <p>Comment</p>
+                    </div>
+                </div>
+
+                <div class="box box3">
+                    <div class="in">
+                        <p>Share</p>
+                    </div>
+                </div>
+
+                <div class="box box4">
+                    <div class="in">
+                        <p>Subscibe</p>
+                    </div>
+                </div>
+            </div>
+          <div class="bottom">
+            <p>@ 2022. Design with bye Roshan mirase</p>
+          </div>
+        </div>
+
+
+    <script>
+     let first = document.getElementById("first");
+     let last = document.getElementById("last");
+     let text = document.getElementById("text");
+
+     window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        first.style.top = value * 0.7 + 'px';
+        last.style.bottom = value * 0.5 + 'px';
+        text.style.top = value * 1 + 'px';
+     })
+    </script>
+    
+</body>
+</html>
